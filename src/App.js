@@ -1,23 +1,53 @@
-import logo from './logo.svg';
+import Footer from './components/Footer';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Navbar from './components/Navbar';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import 'animate.css';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* speed = scrolling speed factor = length of the page or layer*/}
+      {/* <Parallax pages={6} speed={1} factor={1}>
+        <ParallaxLayer>
+          <Navbar />
+        </ParallaxLayer>
+        <ParallaxLayer>
+          <About />
+        </ParallaxLayer>
+        <ParallaxLayer offset={1}>
+          <Skills />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2}>
+          <Experience />
+        </ParallaxLayer>
+        <ParallaxLayer offset={3}>
+          <Projects />
+        </ParallaxLayer>
+        <ParallaxLayer offset={4}>
+          <Footer />
+        </ParallaxLayer>
+      </Parallax> */}
+      <Navbar/>
+      <section>
+        <About/>
+      </section>
+      <section>
+        <Skills/>
+      </section>
+      <section> 
+        <Experience/>
+      </section>
+      <section>
+        <Projects/>
+      </section>
+      <Footer/>
     </div>
   );
 }
