@@ -28,9 +28,11 @@ const Skills = () => {
   return (
     <div className='skills_container'>
       <div className='skills_list_container'>
+        <h1 className='skills_header'>Skills</h1>
         <div className='skills_list'>
           <h2 className='list_header'>Languages</h2>
           {/* Maybe I should use a map function to render the list items or use flexbox to align the icons */}
+          {/* using flex display is more convenient as the spacing between icons can be automatically adjusted */}
           <ul className="list lang">
             {/* Old School Method */}
             <li className="skill hidden"><Icon className="skill_icon" icon="logos:html-5" /></li>

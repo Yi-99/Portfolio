@@ -13,4 +13,5 @@ section {
   display: grid;
   align-content: center;
   place-items: center;
+  margin-bottom: 150px;
 }

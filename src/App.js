@@ -4,6 +4,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Navbar from './components/Navbar';
+import Contact from './components/Contact';
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import 'animate.css';
@@ -35,17 +36,20 @@ function App() {
         </ParallaxLayer>
       </Parallax> */}
       <Navbar/>
-      <section>
+      <section id='about'>
         <About/>
       </section>
-      <section>
+      <section id='skills'>
         <Skills/>
       </section>
-      <section> 
+      <section id='experience'> 
         <Experience/>
       </section>
-      <section>
+      <section id='projects'>
         <Projects/>
+      </section>
+      <section id='contact'>
+        <Contact/>
       </section>
       <Footer/>
     </div>
