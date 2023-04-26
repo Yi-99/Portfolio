@@ -10,3 +10,7 @@ code {
   font-family: 'Work Sans', sans-serif,
     monospace;
 }
+
+html {
+  scroll-behavior: smooth;
+}

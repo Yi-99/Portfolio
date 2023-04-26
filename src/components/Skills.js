@@ -17,6 +17,7 @@ const Skills = () => {
     });
     
     const skillIcons = document.querySelectorAll('.skill');
+    const listHeaders = document.querySelectorAll('.list_header');
     skillIcons.forEach((element) => observer.observe(element));
   
     return () => {

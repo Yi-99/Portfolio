@@ -221,35 +221,39 @@
 }
 
 .card {
-	width: 17em;
-	height: 22.5em;
+	width: 70em;
+	padding: 20px 0 20px 0;
 	background: #171717;
 	transition: 1s ease-in-out;
-	clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
 	border-top-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 	display: flex;
 	flex-direction: column;
-  }
+	box-shadow:rgb(0, 0, 0) 5px 5px 10px;
+	align-items: center;
+	animation-delay: .25s;
+}
   
-  .card span {
+.card span {
 	font-weight: bold;
 	color: white;
 	text-align: center;
 	display: block;
 	font-size: 1em;
-  }
+}
   
-  .card .info {
+.card .info {
 	font-weight: 400;
 	color: white;
 	display: block;
 	text-align: center;
-	font-size: 0.72em;
+	font-size: 20px;
 	margin: 1em;
-  }
-  
-  .card .img {
+	text-align: left;
+	width: 80%;
+}
+
+.card .img {
 	width: 6em;
 	height: 2em;
 	display: flex;
@@ -257,23 +261,30 @@
 	align-items: center;
 	background: white;
 	border-radius: 15px;
-	margin: auto;
-  }
-  
-  .card .share {
+	margin: auto auto 10px auto;
+}
+
+.card .share {
 	margin-top: 1em;
+	margin-bottom: 20px;
 	display: flex;
 	justify-content: center;
 	gap: 1em;
-  }
-  
-  .card a {
+}
+
+.card a {
 	color: white;
 	transition: text-shadow 0.25s ease-out;
-  }
-  
-  .card .button {
-	padding: 0.8em 1.7em;
+}
+
+.card .button_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.card .button {	
+	padding: 10px 15px;	
 	display: block;
 	margin: auto;
 	border-radius: 25px;
@@ -281,12 +292,31 @@
 	font-weight: bold;
 	background: #ffffff;
 	color: rgb(0, 0, 0);
-	transition: .4s ease-in-out;
+	transition: .25s ease-in-out;
 	text-decoration: none;
-  }
-  
-  .card .button:hover {
+	margin: 10px 10px 10px 10px;
+}
+
+.card .button:hover {
 	background: black;
 	color: white;
 	cursor: pointer;
-  }
+}
+
+.card_header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	margin-bottom: 0px;
+	font-size: 40px;
+	margin-top: 0px;
+}
+
+.company {
+	font-size: 15px;
+}
