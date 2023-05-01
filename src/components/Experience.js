@@ -24,7 +24,7 @@ const Experience = () => {
 
   return (
     <div className='exp_container'>
-      <h1 className='exp_header'>Experience</h1>
+      <h1 className='header'>Experience</h1>
       <div className='exp_card_container'>
         <div class="card hidden">
           <div class="card_header">
@@ -47,7 +47,7 @@ const Experience = () => {
           <div class="share">
             {/* <a href=""><Icon icon="carbon:logo-github" /></a> */}
             <a href="https://www.linkedin.com/company/ipohub-org/"><Icon icon="devicon-plain:linkedin" /></a>
-            <a href=""><Icon icon="ri:twitter-fill" color="white" /></a>
+            <a href="https://twitter.com/ipohub_org?lang=en"><Icon icon="ri:twitter-fill" color="white" /></a>
           </div>
           <div className='button_container'>
             <a href="https://www.ipohub.org" className="button">IPOHub</a>
