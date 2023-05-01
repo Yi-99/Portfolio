@@ -24,6 +24,7 @@ const Experience = () => {
 
   return (
     <div className='exp_container'>
+      <h1 className='exp_header'>Experience</h1>
       <div className='exp_card_container'>
         <div class="card hidden">
           <div class="card_header">
