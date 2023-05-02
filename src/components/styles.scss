@@ -147,7 +147,6 @@
 .skills_list {
 	display: flex;
 	flex-direction: column;
-	margin: 150px 0 150px 0;
 }
 
 .list_header {
@@ -156,12 +155,15 @@
 
 .list {
 	list-style-type: none;
-	justify-content: center;
+	justify-content: start;
 	padding-left: 0;
 	display: flex;
-}
+	flex-direction: row;
+	gap: 50px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 
-.list.lang {
 	li:nth-child(1) {
 		animation-delay: 0.25s;
 	}
@@ -179,6 +181,30 @@
 	}
 }
 
+.list_item {
+	margin: 20px 0 20px 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	gap: 50px;
+}
+
+.skill_level {
+	width: 100%; /* Full width */
+	background-color: #ddd; /* Grey background */
+	border-radius: 10px;
+}
+  
+.level {
+	text-align: right; /* Right-align text */
+	padding-top: 10px; /* Add top padding */
+	padding-bottom: 10px; /* Add bottom padding */
+	color: white; /* White text color */
+	font-weight: 700;
+	border-radius: 10px;
+}
+
 .list.framework {
 	li:nth-child(1) {
 		animation-delay: 0.25s;
@@ -194,19 +220,114 @@
 	}
 }
 
-.skill {
-	margin: 20px 20px 20px 20px;
-	float: left;
+.skill_icon {
+	width: 120px;
+	height: 120px;
 	background-color: white;
 	padding: 20px 20px 20px 20px;
 	border-radius: 10px;
-	display: list-item;
 }
 
-.skill_icon {
-	width: 100px;
-	height: 100px;
+.skill {
+	width: 160px;
+	height: 160px;
+	position: relative;
 }
+
+.outer {
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rbga(255,255,255,0.7);
+	padding: 20px;
+}
+
+.inner {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#number {
+	font-weight: 600;
+	color: #f5f5f5;
+}
+
+circle {
+	fill: none;
+	stroke: url(#GradientColor);
+	stroke-width: 20px;
+	stroke-dasharray: 472;
+	stroke-dashoffset: 472;
+	
+	&.HTML {
+		animation: load_html 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+	&.CSS {
+		animation: load_css 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+	&.JS {
+		animation: load_js 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+	&.CPP {
+		animation: load_cpp 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+	&.JAVA {
+		animation: load_java 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+}
+
+@keyframes load_html {
+	100% {
+		stroke-dashoffset: 100;
+	}
+}
+
+@keyframes load_css {
+	100% {
+		stroke-dashoffset: 150;
+	}
+}
+
+@keyframes load_js {
+	100% {
+		stroke-dashoffset: 250;
+	}
+}
+
+@keyframes load_cpp {
+	100% {
+		stroke-dashoffset: 100;
+	}
+}
+
+@keyframes load_java {
+	100% {
+		stroke-dashoffset: 150;
+	}
+}
+
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.HTML {  } 
+.CSS {  } /* Blue */
+.JS {background-color: #ddce00;} /* Yellow */
+.Cplusplus {background-color: #000080;} /* Darker Blue */
+.JAVA { background-color: #f44336;} /* Red */
 
 /* ----------------------------EXPERIENCE----------------------------- */
 .exp_container {
@@ -370,11 +491,6 @@
 
 
 /* ----------------------------CONTACT----------------------------- */
-svg {
-	width: 50px;
-	height: 50px;
-}
-
 .contact_container p {
 	margin-bottom: 50px;
 }

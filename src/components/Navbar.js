@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="menu">
         <ul>
           <li>
-            <a className="menu_item item1 animate__animated animate__zoomIn animate__tada" href="#about">About</a>
+            <a className="menu_item item1 animate__animated animate__zoomIn" href="#about">About</a>
           </li>  
           <li>
             <a className="menu_item item2 animate__animated animate__zoomIn" href="#skills">Skills</a>
