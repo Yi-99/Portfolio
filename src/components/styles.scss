@@ -266,54 +266,76 @@ circle {
 	stroke-dashoffset: 472;
 	
 	&.HTML {
-		animation: load_html 2s linear forwards;
+		animation: load_90 2s linear forwards;
 		animation-delay: 1.5s;
 	}
 	&.CSS {
-		animation: load_css 2s linear forwards;
+		animation: load_75 2s linear forwards;
 		animation-delay: 1.5s;
 	}
 	&.JS {
-		animation: load_js 2s linear forwards;
+		animation: load_50 2s linear forwards;
 		animation-delay: 1.5s;
 	}
 	&.CPP {
-		animation: load_cpp 2s linear forwards;
+		animation: load_90 2s linear forwards;
 		animation-delay: 1.5s;
 	}
 	&.JAVA {
-		animation: load_java 2s linear forwards;
+		animation: load_75 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+	&.PYTHON {
+		animation: load_25 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+	&.REACT {
+		animation: load_50 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+	&.EXPRESS {
+		animation: load_25 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+	&.BOOTSTRAP {
+		animation: load_25 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+	&.NEXT {
+		animation: load_25 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+	&.NODE {
+		animation: load_50 2s linear forwards;
+		animation-delay: 1.5s;
+	}
+	&.MONGO {
+		animation: load_25 2s linear forwards;
 		animation-delay: 1.5s;
 	}
 }
 
-@keyframes load_html {
+@keyframes load_90 {
 	100% {
 		stroke-dashoffset: 100;
 	}
 }
 
-@keyframes load_css {
+@keyframes load_75 {
 	100% {
 		stroke-dashoffset: 150;
 	}
 }
 
-@keyframes load_js {
+@keyframes load_50 {
 	100% {
 		stroke-dashoffset: 250;
 	}
 }
 
-@keyframes load_cpp {
+@keyframes load_25 {
 	100% {
-		stroke-dashoffset: 100;
-	}
-}
-
-@keyframes load_java {
-	100% {
-		stroke-dashoffset: 150;
+		stroke-dashoffset: 375;
 	}
 }
 
@@ -322,12 +344,6 @@ circle {
 	top: 0;
 	left: 0;
 }
-
-.HTML {  } 
-.CSS {  } /* Blue */
-.JS {background-color: #ddce00;} /* Yellow */
-.Cplusplus {background-color: #000080;} /* Darker Blue */
-.JAVA { background-color: #f44336;} /* Red */
 
 /* ----------------------------EXPERIENCE----------------------------- */
 .exp_container {
