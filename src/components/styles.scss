@@ -11,7 +11,6 @@
 .navbar_container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
@@ -38,6 +37,11 @@
     padding: 0 50px 0 50px;
 }
 
+.navbar_toggle {
+	display: none;
+}
+
+
 // menu slide in animation
 @keyframes slideInLeft {
     0% {
@@ -52,13 +56,13 @@
 .menu {
     display: flex;
     flex-direction: row;
-
+	padding: 0px 50px 0px 50px;
     ul {
         display: flex;
         flex-direction: row;
         list-style-type: none;
         float: left;
-        padding: 0px 50px 0px 50px;
+        
         li {
             .menu_item {
                 color: rgb(200, 200, 200);
@@ -76,8 +80,35 @@
             .item2 { animation-delay: 0.5s; }
             .item3 { animation-delay: 0.75s; }
             .item4 { animation-delay: 1.25s; }
+
         }
     }
+}
+
+.toggle-button {
+	position: absolute;
+	top: 0.75rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+
+	.bar {
+		height: 3px;
+		width: 100%;
+		background-color: white;
+		border-radius: 10px;
+	}
+}
+
+.dropdown_menu {
+	display: none;
+}
+
+.drop_menu_list {
+	list-style-type: none;
 }
 
 /* ----------------------------ABOUT----------------------------- */
@@ -133,6 +164,23 @@
 	transform: translateX(0);
 }
 
+@media(max-width: 767px) {
+	.about_container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.about_header {
+		font-size: 4rem !important;
+		text-align: center !important;
+	}
+	.about_me {
+		font-size: 0.9rem !important;
+	}
+}
+
 /* ----------------------------SKILLS----------------------------- */
 .skills_container {
 	width: 60%;
@@ -178,6 +226,9 @@
 	}
 	li:nth-child(5) {
 		animation-delay: 1.25s;
+	}
+	li:nth-child(6) {
+		animation-delay: 1.5s
 	}
 }
 
@@ -376,6 +427,10 @@ circle {
 	box-shadow:rgb(0, 0, 0) 5px 5px 10px;
 	align-items: center;
 	animation-delay: .25s;
+
+	@media(max-width:767px) {
+		width: 25em;
+	}
 }
   
 .card span {
@@ -439,6 +494,11 @@ circle {
 	transition: .25s ease-in-out;
 	text-decoration: none;
 	margin: 10px 10px 10px 10px;
+
+	@media(max-width:767px) {
+		padding: 5px 10px;
+		font-size: 12px;
+	}
 }
 
 .card .button:hover {
@@ -476,6 +536,11 @@ circle {
 
 .project_card {
 	width: 30em;
+
+	@media(max-width: 767px) {
+		width: 20em;
+	}
+
 	padding: 20px 0 20px 0;
 	background: #171717;
 	transition: 1s ease-in-out;
@@ -501,8 +566,9 @@ circle {
 
 .title {
 	margin-bottom: 0px;
-	font-size: 30px;
+	font-size: 25px;
 	margin-top: 0px;
+	padding: 0 10px 0 10px;
 }
 
 
@@ -527,5 +593,81 @@ circle {
 	&:hover{
 		color: rgb(250, 250, 250);
 		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+	}
+}
+
+/* ----------------------------MEDIA QUERY----------------------------- */
+/* NAVBAR */
+@media(max-width: 767px) {
+	.navbar_toggle {
+		display: flex;
+		margin-left: auto;
+	}
+
+	.menu_list {
+		display: none !important;
+	}
+
+	.navbar_container {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between !important;
+		margin: 0;
+	}
+}
+/* ABOUT */
+@media(max-width: 767px) {
+	.about_container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.about_header {
+		font-size: 4rem !important;
+		text-align: center !important;
+	}
+	.about_me {
+		font-size: 0.9rem !important;
+	}
+}
+/* SKILLS */
+@media(max-width: 767px) {
+	.skills_container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+/* EXPERIENCE */
+@media(max-width: 767px) {
+	.exp_container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+/* PROJECT */
+@media(max-width: 767px) {
+	.project_container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}/* CONTACT */
+@media(max-width: 767px) {
+	.contact_container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }

@@ -26,7 +26,7 @@ const About = () => {
 
   return (
     <div className='about_container'>
-      <div className='hidden'> 
+      <div className='about_intro hidden'> 
         <h1 className='about_header'>
           Hi! I am <span className="name">Yirang.</span>
         </h1>

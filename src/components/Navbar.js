@@ -1,5 +1,6 @@
 import styles from './styles.scss';
 import logo from '../assets/y-logo.png';
+import { Icon } from '@iconify/react';
 
 const Navbar = () => {
   return (
@@ -9,8 +10,11 @@ const Navbar = () => {
           <img className="logo" src={logo} alt="logo" />
         </a>
       </div>
+      <div className="navbar_toggle">
+        <Icon className="navbar_icon" icon="uil:bars" color="white" />  
+      </div>
       <div className="menu">
-        <ul>
+        <ul className='menu_list'>
           <li>
             <a className="menu_item item1 animate__animated animate__zoomIn" href="#about">About</a>
           </li>  
@@ -25,6 +29,22 @@ const Navbar = () => {
           </li>
           <li>
             <a className="menu_item item4 animate__animated animate__zoomIn " href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div className="dropdown_menu">
+        <ul className='drop_menu_list'>
+          <li>
+
+          </li>
+          <li>
+            
+          </li>
+          <li>
+            
+          </li>
+          <li>
+            
           </li>
         </ul>
       </div>
