@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import ReorderIcon from '@mui/icons-material/Reorder';
 import './styles.scss';
 
 const About = () => {

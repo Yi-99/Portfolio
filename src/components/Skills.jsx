@@ -87,7 +87,7 @@ const Skills = () => {
             
           <ul className="list">
             <li className='list_item'>
-              <Icon className="skill_icon " icon="logos:html-5" />
+              <Icon className="skill_icon" icon="logos:html-5" />
               <div className='skill'>
                 <div className='outer'>
                   <div className='inner'>
@@ -107,7 +107,7 @@ const Skills = () => {
               </div>
             </li>
             <li className='list_item'>
-              <Icon className="skill_icon " icon="logos:css-3" />
+              <Icon className="skill_icon" icon="logos:css-3" />
               <div className='skill'>
                 <div className='outer'>
                   <div className='inner'>
@@ -120,7 +120,7 @@ const Skills = () => {
               </div>
             </li>
             <li className='list_item'>
-              <Icon className="skill_icon " icon="logos:javascript" />
+              <Icon className="skill_icon" icon="logos:javascript" />
               <div className='skill'>
                 <div className='outer'>
                   <div className='inner'>
@@ -133,7 +133,7 @@ const Skills = () => {
               </div>
             </li>
             <li className='list_item'>
-              <Icon className="skill_icon " icon="logos:c-plusplus" />
+              <Icon className="skill_icon" icon="logos:c-plusplus" />
               <div className='skill'>
                 <div className='outer'>
                   <div className='inner'>
@@ -146,7 +146,7 @@ const Skills = () => {
               </div>
             </li>
             <li className='list_item'>
-              <Icon className="skill_icon " icon="devicon:java-wordmark" />
+              <Icon className="skill_icon" icon="devicon:java-wordmark" />
               <div className='skill'>
                 <div className='outer'>
                   <div className='inner'>
