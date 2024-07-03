@@ -5,10 +5,10 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
-import React, { useEffect, useState } from 'react';
 import './App.css';
 import 'animate.css';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+// import React, { useEffect, useState } from 'react';
+// import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 function App() {
 

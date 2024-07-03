@@ -31,7 +31,7 @@ const About = () => {
         </h1>
       </div>
       <p className="about_me hidden">
-        I am an aspiring software developer who is passionate about building applications that are aesthically pleasing, comprehensive in utility, and effective in providing resolutions to problems. I am currently a junior at Brigham Young University, majoring in Computer Science. I am currently looking for full-time software developer positions starting in May of 2023.
+        I am a software developer who is passionate about building applications that are aesthically pleasing, comprehensive in utility, and effective in providing resolutions to problems. I am currently a senior at Brigham Young University, majoring in Computer Science. I will be graduation on December 2024. I am currently looking for full-time software developer positions.
       </p>
     </div>
   )

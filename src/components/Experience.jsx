@@ -56,6 +56,35 @@ const Experience = () => {
           </div>
         </div>
       </div>
+
+      <div className='exp_card_container'>
+        <div class="card hidden">
+          <div class="card_header">
+            <div>
+              <img src="https://www.byutv.org/images/byutv-logo.svg" alt="BYUtv logo" width="80" height="auto"/>
+            </div>
+            <h1 className='title'>Back-End Developer</h1>
+            <p className='company'>BYU Broadcasting</p>
+          </div>
+          <p className="info">
+            Enhanced the load time of the continue watching list of users by <strong>10x</strong> by improving the system design of the User Authentication service by migrating it from a <strong>REST-based architecture to an Event-Driven Architecture</strong>, utilizing <strong>AWS Eventbridge and SQS</strong>
+          </p>
+          <p className="info">
+            Implemented an event stream processor and handler to manage and monitor the ingestion of events from AWS Eventbridge and SQS using <strong>AWS CDK v2 and v3 in Javascript and Typescript</strong>to hydrate Event-driven microservices <strong>AWS DynamoDB tables via AWS SQS and Amazon Lambda</strong>
+          </p>
+          <p className='info'>
+            Implemented API endpoints by integrating AWS API Gateway and AWS Lambda to streamline API calls between microservices and created numerous <strong>Unit, Integration, and E2E tests utilizing Jest library to ensure successful CI/CD</strong>
+          </p>
+          <div class="share">
+            {/* <a href=""><Icon icon="carbon:logo-github" /></a> */}
+            <a href="https://www.linkedin.com/company/ipohub-org/"><Icon icon="devicon-plain:linkedin" /></a>
+            <a href="https://twitter.com/ipohub_org?lang=en"><Icon icon="ri:twitter-fill" color="white" /></a>
+          </div>
+          <div className='button_container'>
+            <a href="https://www.byutv.org" className="button">BYUtv</a>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

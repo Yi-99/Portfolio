@@ -506,7 +506,7 @@ circle {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	margin: 10 10 10 10px;
+	margin: 10px 10px 20px 10px;
 	min-width: 100%;
 }
 
@@ -636,7 +636,7 @@ circle {
 		width: 20em;
 	}
 
-	padding: 20px 0 20px 0;
+	padding: 20px 10px 20px 10px;
 	background: #171717;
 	transition: 1s ease-in-out;
 	border-top-right-radius: 20px;
@@ -666,6 +666,13 @@ circle {
 	padding: 0 10px 0 10px;
 }
 
+.info {
+	text-align: center;
+}
+
+.time_loc {
+	font-size: 14px;
+}
 
 /* ----------------------------CONTACT----------------------------- */
 .contact_container p {
