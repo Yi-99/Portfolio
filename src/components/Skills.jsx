@@ -9,12 +9,6 @@ const Skills = () => {
   const jsRef = useRef(null);
   const cppRef = useRef(null);
   const javaRef = useRef(null);
-  const reactRef = useRef(null);
-  const nodeRef = useRef(null);
-  const mongoRef = useRef(null);
-  const expressRef = useRef(null);
-  const bootstrapRef = useRef(null);
-  const nextRef = useRef(null);
   const pythonRef = useRef(null);
 
   useEffect(() => {
@@ -46,23 +40,15 @@ const Skills = () => {
           cssRef.current.innerHTML = counter + '%';
         } else if (counter > 24) {
           counter += 1;
-          reactRef.current.innerHTML = counter + '%';
-          nodeRef.current.innerHTML = counter + '%';
           jsRef.current.innerHTML = counter + '%';
         } else {
           counter += 1;
           pythonRef.current.innerHTML = counter + '%';
-          bootstrapRef.current.innerHTML = counter + '%';
-          nextRef.current.innerHTML = counter + '%';
-          mongoRef.current.innerHTML = counter + '%';
-          expressRef.current.innerHTML = counter + '%';
-          reactRef.current.innerHTML = counter + '%';
           jsRef.current.innerHTML = counter + '%';
           htmlRef.current.innerHTML = counter + '%';
           cppRef.current.innerHTML = counter + '%';
           javaRef.current.innerHTML = counter + '%';
           cssRef.current.innerHTML = counter + '%';
-          nodeRef.current.innerHTML = counter + '%';
         }
       }, 20);
   
@@ -96,11 +82,11 @@ const Skills = () => {
                     <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
                       <defs>
                           <linearGradient id="GradientColor">
-                            <stop offset="0%" stop-color="#89CFF0" />
-                            <stop offset="100%" stop-color="#673ab7" />
+                            <stop offset="0%" stopColor="#89CFF0" />
+                            <stop offset="100%" stopColor="#673ab7" />
                           </linearGradient>
                       </defs>
-                      <circle className="HTML" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      <circle className="HTML" cx="80" cy="80" r="70" strokeLinecap="round" />
                     </svg>
                   </div>
                 </div>
@@ -113,7 +99,7 @@ const Skills = () => {
                   <div className='inner'>
                     <div id="number" ref={cssRef}></div>
                     <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <circle className="CSS" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      <circle className="CSS" cx="80" cy="80" r="70" strokeLinecap="round" />
                     </svg>
                   </div>
                 </div>
@@ -126,7 +112,7 @@ const Skills = () => {
                   <div className='inner'>
                     <div id="number" ref={jsRef}></div>
                     <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <circle className="JS" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      <circle className="JS" cx="80" cy="80" r="70" strokeLinecap="round" />
                     </svg>
                   </div>
                 </div>
@@ -139,7 +125,7 @@ const Skills = () => {
                   <div className='inner'>
                     <div id="number" ref={cppRef}></div>
                     <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <circle className="CPP" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      <circle className="CPP" cx="80" cy="80" r="70" strokeLinecap="round" />
                     </svg>
                   </div>
                 </div>
@@ -152,7 +138,7 @@ const Skills = () => {
                   <div className='inner'>
                     <div id="number" ref={javaRef}></div>
                     <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <circle className="JAVA" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      <circle className="JAVA" cx="80" cy="80" r="70" strokeLinecap="round" />
                     </svg>
                   </div>
                 </div>
@@ -165,7 +151,7 @@ const Skills = () => {
                   <div className='inner'>
                     <div id="number" ref={pythonRef}></div>
                     <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <circle className="PYTHON" cx="80" cy="80" r="70" stroke-linecap="round" />
+                      <circle className="PYTHON" cx="80" cy="80" r="70" strokeLinecap="round" />
                     </svg>
                   </div>
                 </div>
@@ -173,81 +159,38 @@ const Skills = () => {
             </li>
           </ul>
         </div>
+
         {/*Frameworks*/}
         <h1 className='skills_header'>Frameworks</h1>
         <div className='skills_list'>            
           <ul className="list">
             <li className='list_item'>
+              <Icon className="skill_icon" icon="vscode-icons:file-type-node" />
+            </li>
+            <li className='list_item'>
               <Icon className="skill_icon" icon="logos:react" />
-              <div className='skill'>
-                <div className='outer'>
-                  <div className='inner'>
-                    <div id="number" ref={reactRef}></div>
-                    
-                    <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <defs>
-                          <linearGradient id="GradientColor">
-                            <stop offset="0%" stop-color="#89CFF0" />
-                            <stop offset="100%" stop-color="#673ab7" />
-                          </linearGradient>
-                      </defs>
-                      <circle className="REACT" cx="80" cy="80" r="70" stroke-linecap="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
             </li>
             <li className='list_item'>
               <Icon className="skill_icon" icon="logos:express" />
-              <div className='skill'>
-                <div className='outer'>
-                  <div className='inner'>
-                    <div id="number" ref={expressRef}></div>
-                    <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <circle className="EXPRESS" cx="80" cy="80" r="70" stroke-linecap="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li className='list_item'>
-              <Icon className="skill_icon" icon="devicon:bootstrap-wordmark" />
-              <div className='skill'>
-                <div className='outer'>
-                  <div className='inner'>
-                    <div id="number" ref={bootstrapRef}></div>
-                    <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <circle className="BOOTSTRAP" cx="80" cy="80" r="70" stroke-linecap="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
             </li>
             <li className='list_item'>
               <Icon className="skill_icon" icon="cib:next-js" />
-              <div className='skill'>
-                <div className='outer'>
-                  <div className='inner'>
-                    <div id="number" ref={nextRef}></div>
-                    <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <circle className="NEXT" cx="80" cy="80" r="70" stroke-linecap="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
             </li>
             <li className='list_item'>
-              <Icon className="skill_icon" icon="vscode-icons:file-type-node" />
-              <div className='skill'>
-                <div className='outer'>
-                  <div className='inner'>
-                    <div id="number" ref={nodeRef}></div>
-                    <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <circle className="NODE" cx="80" cy="80" r="70" stroke-linecap="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div> 
+              <Icon className="skill_icon" icon="devicon:fastapi" />
+            </li>
+          </ul>
+        </div>
+
+        {/*Tech Stacks*/}
+        <h1 className='skills_header'>Cloud Tech Stacks</h1>
+        <div className='skills_list'>            
+          <ul className="list">
+            <li className='list_item'>
+              <Icon className="skill_icon" icon="logos:aws" />
+            </li>
+            <li className='list_item'>
+              <Icon className="skill_icon" icon="devicon:googlecloud" />
             </li>
           </ul>
         </div>
@@ -258,16 +201,21 @@ const Skills = () => {
           <ul className="list">
             <li className='list_item'>
               <Icon className="skill_icon" icon="devicon:mongodb-wordmark" />
-              <div className='skill'>
-                <div className='outer'>
-                  <div className='inner'>
-                    <div id="number" ref={mongoRef}></div>
-                    <svg className="circle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                      <circle className="MONGO" cx="80" cy="80" r="70" stroke-linecap="round" />
-                    </svg>
-                  </div>
-                </div>
-              </div> 
+            </li>
+            <li className='list_item'>
+              <Icon className="skill_icon" icon="logos:postgresql" />
+            </li>
+            <li className='list_item'>
+              <Icon className="skill_icon" icon="devicon:dynamodb" />
+            </li>
+            <li className='list_item'>
+              <Icon className='skill_icon' icon="logos:mysql" />
+            </li>
+            <li className='list_item'>
+              <Icon className="skill_icon" icon="skill-icons:supabase-light" />
+            </li>
+            <li className="list_item">
+              <Icon className="skill_icon" icon="logos:redis" />
             </li>
           </ul>
         </div>

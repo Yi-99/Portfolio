@@ -26,9 +26,9 @@ const Experience = () => {
     <div className='exp_container'>
       <h1 className='header'>Experience</h1>
       <div className='exp_card_container'>
-        <div class="card hidden">
-          <div class="card_header">
-            <div class="img">
+        <div className="card hidden">
+          <div className="card_header">
+            <div className="img">
               <img src="https://uploads-ssl.webflow.com/6417e237f49583444318b9a0/641a2540e0e6a20fb58eb31f_ipohublogo-black.png" alt="ipoHub logo" width="80" height="auto"/>
             </div>
             <h1 className='title'>Front-End Developer</h1>
@@ -44,7 +44,7 @@ const Experience = () => {
           <p className='info'>
             Spearheaded the transfer of three professional business websites to a different CMS, Webflow, without any prior knowledge of Webflow (in-progress)
           </p>
-          <div class="share">
+          <div className="share">
             {/* <a href=""><Icon icon="carbon:logo-github" /></a> */}
             <a href="https://www.linkedin.com/company/ipohub-org/"><Icon icon="devicon-plain:linkedin" /></a>
             <a href="https://twitter.com/ipohub_org?lang=en"><Icon icon="ri:twitter-fill" color="white" /></a>
@@ -58,8 +58,8 @@ const Experience = () => {
       </div>
 
       <div className='exp_card_container'>
-        <div class="card hidden">
-          <div class="card_header">
+        <div className="card hidden">
+          <div className="card_header">
             <div>
               <img src="https://www.byutv.org/images/byutv-logo.svg" alt="BYUtv logo" width="80" height="auto"/>
             </div>
@@ -75,7 +75,7 @@ const Experience = () => {
           <p className='info'>
             Implemented API endpoints by integrating AWS API Gateway and AWS Lambda to streamline API calls between microservices and created numerous <strong>Unit, Integration, and E2E tests utilizing Jest library to ensure successful CI/CD</strong>
           </p>
-          <div class="share">
+          <div className="share">
             {/* <a href=""><Icon icon="carbon:logo-github" /></a> */}
             <a href="https://www.linkedin.com/company/ipohub-org/"><Icon icon="devicon-plain:linkedin" /></a>
             <a href="https://twitter.com/ipohub_org?lang=en"><Icon icon="ri:twitter-fill" color="white" /></a>
