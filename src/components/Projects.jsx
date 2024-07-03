@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Icon } from '@iconify/react';
+import aiTripAdvisorVideo from '../assets/ai-trip-advisor.mp4';
 import './styles.scss';
 
 const Projects = () => {
@@ -47,6 +48,9 @@ const Projects = () => {
           <p className="info">
             A monolithic web application created on top of React for the frontend and Node.JS for the backend that generates a week-long trip itinerary based on user preferences and constraints
           </p>
+          <video className="video" controls controlsList="nodownload">
+            <source src={aiTripAdvisorVideo} type="video/mp4" />
+          </video> 
           <div className="share">
             <a className="project_link" href="https://github.com/brightlightkim/google_ai_hackathon">
               <Icon icon="ion:logo-github" color="white" />
