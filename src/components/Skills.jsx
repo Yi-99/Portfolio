@@ -1,15 +1,16 @@
-import React, { useEffect, useRef } from 'react'
+// import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 import { Icon } from '@iconify/react';
 import './styles.scss';
 
 const Skills = () => {
   // const icons = [ 'icon1', 'icon2', 'icon3', 'icon4', 'icon5' ];
-  const htmlRef = useRef(null);
-  const cssRef = useRef(null);
-  const jsRef = useRef(null);
-  const cppRef = useRef(null);
-  const javaRef = useRef(null);
-  const pythonRef = useRef(null);
+  // const htmlRef = useRef(null);
+  // const cssRef = useRef(null);
+  // const jsRef = useRef(null);
+  // const cppRef = useRef(null);
+  // const javaRef = useRef(null);
+  // const pythonRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -23,42 +24,42 @@ const Skills = () => {
     const skillIcons = document.querySelectorAll('.list_item');
     skillIcons.forEach((element) => observer.observe(element));
   
-    const interval = setTimeout(() => {
-      let counter = 0;
-      const intervalId = setInterval(() => {
-        if (counter === 90) {
-          clearInterval(intervalId);
-        } else if (counter > 74) {
-          counter += 1;
-          cppRef.current.innerHTML = counter + '%';
-          htmlRef.current.innerHTML = counter + '%';
-        } else if (counter > 49) {
-          counter += 1;
-          htmlRef.current.innerHTML = counter + '%';
-          cppRef.current.innerHTML = counter + '%';
-          javaRef.current.innerHTML = counter + '%';
-          cssRef.current.innerHTML = counter + '%';
-        } else if (counter > 24) {
-          counter += 1;
-          jsRef.current.innerHTML = counter + '%';
-        } else {
-          counter += 1;
-          pythonRef.current.innerHTML = counter + '%';
-          jsRef.current.innerHTML = counter + '%';
-          htmlRef.current.innerHTML = counter + '%';
-          cppRef.current.innerHTML = counter + '%';
-          javaRef.current.innerHTML = counter + '%';
-          cssRef.current.innerHTML = counter + '%';
-        }
-      }, 20);
+    // const interval = setTimeout(() => {
+    //   let counter = 0;
+    //   const intervalId = setInterval(() => {
+    //     if (counter === 90) {
+    //       clearInterval(intervalId);
+    //     } else if (counter > 74) {
+    //       counter += 1;
+    //       cppRef.current.innerHTML = counter + '%';
+    //       htmlRef.current.innerHTML = counter + '%';
+    //     } else if (counter > 49) {
+    //       counter += 1;
+    //       htmlRef.current.innerHTML = counter + '%';
+    //       cppRef.current.innerHTML = counter + '%';
+    //       javaRef.current.innerHTML = counter + '%';
+    //       cssRef.current.innerHTML = counter + '%';
+    //     } else if (counter > 24) {
+    //       counter += 1;
+    //       jsRef.current.innerHTML = counter + '%';
+    //     } else {
+    //       counter += 1;
+    //       pythonRef.current.innerHTML = counter + '%';
+    //       jsRef.current.innerHTML = counter + '%';
+    //       htmlRef.current.innerHTML = counter + '%';
+    //       cppRef.current.innerHTML = counter + '%';
+    //       javaRef.current.innerHTML = counter + '%';
+    //       cssRef.current.innerHTML = counter + '%';
+    //     }
+    //   }, 20);
   
-      return () => {
-        clearInterval(intervalId);
-      };
-    }, 1500); // Delay of 2 seconds before the count starts
+    //   return () => {
+    //     clearInterval(intervalId);
+    //   };
+    // }, 1500); // Delay of 2 seconds before the count starts
   
     return () => {
-      clearTimeout(interval);
+      // clearTimeout(interval);
       skillIcons.forEach((element) => observer.unobserve(element));
     };
   }, []);
@@ -74,7 +75,7 @@ const Skills = () => {
           <ul className="list">
             <li className='list_item'>
               <Icon className="skill_icon" icon="logos:html-5" />
-              <div className='skill'>
+              {/* <div className='skill'>
                 <div className='outer'>
                   <div className='inner'>
                     <div id="number" ref={htmlRef}></div>
@@ -90,11 +91,11 @@ const Skills = () => {
                     </svg>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </li>
             <li className='list_item'>
               <Icon className="skill_icon" icon="logos:css-3" />
-              <div className='skill'>
+              {/* <div className='skill'>
                 <div className='outer'>
                   <div className='inner'>
                     <div id="number" ref={cssRef}></div>
@@ -103,11 +104,11 @@ const Skills = () => {
                     </svg>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </li>
             <li className='list_item'>
               <Icon className="skill_icon" icon="logos:javascript" />
-              <div className='skill'>
+              {/* <div className='skill'>
                 <div className='outer'>
                   <div className='inner'>
                     <div id="number" ref={jsRef}></div>
@@ -116,11 +117,11 @@ const Skills = () => {
                     </svg>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </li>
             <li className='list_item'>
               <Icon className="skill_icon" icon="logos:c-plusplus" />
-              <div className='skill'>
+              {/* <div className='skill'>
                 <div className='outer'>
                   <div className='inner'>
                     <div id="number" ref={cppRef}></div>
@@ -129,11 +130,11 @@ const Skills = () => {
                     </svg>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </li>
             <li className='list_item'>
               <Icon className="skill_icon" icon="devicon:java-wordmark" />
-              <div className='skill'>
+              {/* <div className='skill'>
                 <div className='outer'>
                   <div className='inner'>
                     <div id="number" ref={javaRef}></div>
@@ -142,11 +143,11 @@ const Skills = () => {
                     </svg>
                   </div>
                 </div>
-              </div> 
+              </div>  */}
             </li>
             <li className='list_item'>
               <Icon className="skill_icon" icon="devicon:python" />
-              <div className='skill'>
+              {/* <div className='skill'>
                 <div className='outer'>
                   <div className='inner'>
                     <div id="number" ref={pythonRef}></div>
@@ -155,7 +156,13 @@ const Skills = () => {
                     </svg>
                   </div>
                 </div>
-              </div> 
+              </div>  */}
+            </li>
+            <li className='list_item'>
+              <Icon className="skill_icon" icon="devicon:typescript" />
+            </li>
+            <li className='list_item'>
+              <Icon className="skill_icon" icon="logos:git-icon" />
             </li>
           </ul>
         </div>

@@ -35,14 +35,13 @@ const Experience = () => {
             <p className='company'>Marriott School of Business: School of Accountancy</p>
           </div>
           <p className="info">
-            Designed and built a new website using PHP, CSS on the WordPress platform through utilizing and customizing on top of the salient theme
+            Managed three websites that have over 11K users and 850K impressions every month and have over 100+ professional business articles
           </p>
           <p className="info">
-            Counseled and accommodated the needs and the wants of clients on the design and layout of the new blog website and coordinated with the team frequently to post, adjust, and remove articles and posts.
-            Managed two websites that have over 100+ professional business articles and have over 11K users and 850K impressions every month
+            Spearheaded the transfer of three professional business blogs to a different CMS, Webflow from Wordpress
           </p>
           <p className='info'>
-            Spearheaded the transfer of three professional business websites to a different CMS, Webflow, without any prior knowledge of Webflow (in-progress)
+            Counseled and accommodated the needs and wants of clients on the design and layout of the new blog website and coordinated with the team frequently to post, adjust, and remove articles and posts.
           </p>
           <div className="share">
             {/* <a href=""><Icon icon="carbon:logo-github" /></a> */}
@@ -77,8 +76,7 @@ const Experience = () => {
           </p>
           <div className="share">
             {/* <a href=""><Icon icon="carbon:logo-github" /></a> */}
-            <a href="https://www.linkedin.com/company/ipohub-org/"><Icon icon="devicon-plain:linkedin" /></a>
-            <a href="https://twitter.com/ipohub_org?lang=en"><Icon icon="ri:twitter-fill" color="white" /></a>
+            <a href="https://www.linkedin.com/company/byu-broadcasting/mycompany/"><Icon icon="devicon-plain:linkedin" /></a>
           </div>
           <div className='button_container'>
             <a href="https://www.byutv.org" className="button">BYUtv</a>
