@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Icon } from '@iconify/react';
-import aiTripAdvisorVideo from '../assets/ai-trip-advisor.mp4';
+import aiTripAdvisorVideo from '../assets/ai-trip-advisor-mod.mp4';
 import './styles.scss';
 
 const Projects = () => {
