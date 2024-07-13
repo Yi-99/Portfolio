@@ -69,10 +69,10 @@ const Experience = () => {
             Enhanced the load time of the continue watching list of users by <strong>10x</strong> by improving the system design of the User Authentication service by migrating it from a <strong>REST-based architecture to an Event-Driven Architecture</strong>, utilizing <strong>AWS Eventbridge and SQS</strong>
           </p>
           <p className="info">
-            Implemented an event stream processor and handler to manage and monitor the ingestion of events from AWS Eventbridge and SQS using <strong>AWS CDK v2 and v3 in Javascript and Typescript</strong>to hydrate Event-driven microservices <strong>AWS DynamoDB tables via AWS SQS and Amazon Lambda</strong>
+            Implemented an event stream processor and handler to manage and monitor the ingestion of events from AWS Eventbridge and SQS using <strong>AWS CDK v2 and v3 in Javascript and Typescript</strong> to hydrate Event-driven microservices <strong>AWS DynamoDB tables via AWS SQS and Amazon Lambda</strong>
           </p>
           <p className='info'>
-            Implemented API endpoints by integrating AWS API Gateway and AWS Lambda to streamline API calls between microservices and created numerous <strong>Unit, Integration, and E2E tests utilizing Jest library to ensure successful CI/CD</strong>
+            Implemented API endpoints by integrating <strong>AWS API Gateway and AWS Lambda</strong> to streamline API calls between microservices and created numerous <strong>Unit, Integration, and E2E tests utilizing Jest library to ensure successful CI/CD</strong>
           </p>
           <div className="share">
             {/* <a href=""><Icon icon="carbon:logo-github" /></a> */}
