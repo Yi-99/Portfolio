@@ -199,6 +199,12 @@ const Skills = () => {
             <li className='list_item'>
               <Icon className="skill_icon" icon="devicon:googlecloud" />
             </li>
+            <li className='list_item'>
+              <Icon className="skill_icon" icon="devicon:supabase" />
+            </li>
+            <li className='list_item'>
+              <Icon className="skill_icon" icon="logos:firebase" />
+            </li>
           </ul>
         </div>
 
