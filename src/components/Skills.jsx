@@ -186,6 +186,9 @@ const Skills = () => {
             <li className='list_item'>
               <Icon className="skill_icon" icon="devicon:fastapi" />
             </li>
+            <li className='list_item'>
+              <Icon className="skill_icon" icon="devicon:angular" />
+            </li>
           </ul>
         </div>
 
@@ -204,6 +207,9 @@ const Skills = () => {
             </li>
             <li className='list_item'>
               <Icon className="skill_icon" icon="logos:firebase" />
+            </li>
+            <li className='list_item'>
+              <Icon className="skill_icon" icon="logos:azure" />
             </li>
           </ul>
         </div>
@@ -224,11 +230,11 @@ const Skills = () => {
             <li className='list_item'>
               <Icon className='skill_icon' icon="logos:mysql" />
             </li>
-            <li className='list_item'>
-              <Icon className="skill_icon" icon="skill-icons:supabase-light" />
-            </li>
             <li className="list_item">
               <Icon className="skill_icon" icon="logos:redis" />
+            </li>
+            <li className="list_item">
+              <Icon className="skill_icon" icon="devicon:microsoftsqlserver"/>
             </li>
           </ul>
         </div>

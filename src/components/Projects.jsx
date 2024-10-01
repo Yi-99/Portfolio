@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Icon } from '@iconify/react';
 import aiTripAdvisorVideo from '../assets/ai-trip-advisor-mod.mp4';
+import glodAiPromoVideo from '../assets/glod-ai-promo.mp4';
 import './styles.scss';
 
 const Projects = () => {
@@ -30,11 +31,14 @@ const Projects = () => {
       <h1 className='header'>Projects</h1>
       <div className='project_card_container'>
         <div className="project_card hidden card1">
-          <h1 className='title'>AI Video Generator</h1>
+          <h1 className='title'>AI Video Generator - Glod AI</h1>
           <p className='time_loc'>May 2024 ~ Present</p>
           <p className="info">
             A monolithic web application created on top of Next.JS for the frontend and FastAPI for the backend that generates 1-2 minute AI-generated product advertisement videos using various gen AI APIs
           </p>
+          <video className="video" controls controlsList="nodownload">
+            <source src={glodAiPromoVideo} type="video/mp4" />
+          </video> 
           <div className="share">
             <a className="project_link" href="https://github.com/brightlightkim/ai-video-gen">
               <Icon icon="ion:logo-github" color="white" />

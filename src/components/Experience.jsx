@@ -66,13 +66,17 @@ const Experience = () => {
             <p className='company'>BYU Broadcasting</p>
           </div>
           <p className="info">
-            Enhanced the load time of the continue watching list of users by <strong>10x</strong> by improving the system design of the User Authentication service by migrating it from a <strong>REST-based architecture to an Event-Driven Architecture</strong>, utilizing <strong>AWS Eventbridge and SQS</strong>
+            Led the implementation of a highly scalable microservice that supplies the BI with over 1TB of real-time user data
+            every day that handles up to hundred times the usual number of user data during seasonal spikes via Fargate ECS
+            fronted by an ALB, Redis, and AWS Kinesis stream
           </p>
           <p className="info">
-            Implemented an event stream processor and handler to manage and monitor the ingestion of events from AWS Eventbridge and SQS using <strong>AWS CDK v2 and v3 in Javascript and Typescript</strong> to hydrate Event-driven microservices <strong>AWS DynamoDB tables via AWS SQS and Amazon Lambda</strong>
+            Reduced load times by 10x by converting REST-based auth system to Event driven architecture on AWS
+            Eventbridge and SQS
           </p>
           <p className='info'>
-            Implemented API endpoints by integrating <strong>AWS API Gateway and AWS Lambda</strong> to streamline API calls between microservices and created numerous <strong>Unit, Integration, and E2E tests utilizing Jest library to ensure successful CI/CD</strong>
+            Streamlined the ingestion process of an event driven architecture-based microservice using AWS CDK v3 to
+            hydrate AWS DynamoDB tables with over 1 million events a day by leveraging AWS SQS and Lambda
           </p>
           <div className="share">
             {/* <a href=""><Icon icon="carbon:logo-github" /></a> */}
@@ -80,6 +84,38 @@ const Experience = () => {
           </div>
           <div className='button_container'>
             <a href="https://www.byutv.org" className="button">BYUtv</a>
+          </div>
+        </div>
+      </div>
+
+      <div className='exp_card_container'>
+        <div className="card hidden">
+          <div className="card_header">
+            <div>
+              <img src="https://media.licdn.com/dms/image/v2/D560BAQHNmAX6WGLvuQ/company-logo_200_200/company-logo_200_200/0/1719258180878/pollen_sense_llc_logo?e=1735776000&v=beta&t=81unfFThPWjWjJ1jvcThpCRNagaKpPih7VSxEtTPM5Q" alt="PollenSense logo" width="80" height="auto"/>
+            </div>
+            <h1 className='title'>Full-Stack Development Intern</h1>
+            <p className='company'>Pollen Sense LLC</p>
+          </div>
+          <p className="info">
+            Led the implementation of a highly scalable microservice that supplies the BI with over 1TB of real-time user data
+            every day that handles up to hundred times the usual number of user data during seasonal spikes via Fargate ECS
+            fronted by an ALB, Redis, and AWS Kinesis stream
+          </p>
+          <p className="info">
+            Reduced load times by 10x by converting REST-based auth system to Event driven architecture on AWS
+            Eventbridge and SQS
+          </p>
+          <p className='info'>
+            Streamlined the ingestion process of an event driven architecture-based microservice using AWS CDK v3 to
+            hydrate AWS DynamoDB tables with over 1 million events a day by leveraging AWS SQS and Lambda
+          </p>
+          <div className="share">
+            <a href="https://github.com/PollenSense"><Icon icon="carbon:logo-github" /></a>
+            <a href="https://www.linkedin.com/company/pollen-sense-llc/posts/?feedView=all"><Icon icon="devicon-plain:linkedin" /></a>
+          </div>
+          <div className='button_container'>
+            <a href="https://www.pollensense.com/" className="button">Pollen Sense</a>
           </div>
         </div>
       </div>
