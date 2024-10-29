@@ -98,17 +98,13 @@ const Experience = () => {
             <p className='company'>Pollen Sense LLC</p>
           </div>
           <p className="info">
-            Led the implementation of a highly scalable microservice that supplies the BI with over 1TB of real-time user data
-            every day that handles up to hundred times the usual number of user data during seasonal spikes via Fargate ECS
-            fronted by an ALB, Redis, and AWS Kinesis stream
+						Refactored customer-facing website built on Angular 17 to be mobile friendly utilizing SCSS and Bootstrap
           </p>
           <p className="info">
-            Reduced load times by 10x by converting REST-based auth system to Event driven architecture on AWS
-            Eventbridge and SQS
+						Built a customer-facing web page based which empowers the user to have more direct control of the APS400 Particulate Sensor that extracts pollen, dust, and mold from the air and analyzes the composition of different particles
           </p>
           <p className='info'>
-            Streamlined the ingestion process of an event driven architecture-based microservice using AWS CDK v3 to
-            hydrate AWS DynamoDB tables with over 1 million events a day by leveraging AWS SQS and Lambda
+						Implemented a delete frames feature and backend API endpoint that handles the deletion of frame metadata in Microsoft SQL server and raw frame images in Azure Blob Storage by leveraging Azure App Functions and .NET Framework
           </p>
           <div className="share">
             <a href="https://github.com/PollenSense"><Icon icon="carbon:logo-github" /></a>
