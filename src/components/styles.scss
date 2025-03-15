@@ -541,10 +541,17 @@ circle {
 	display: block;
 	font-size: 1em;
 }
+
+.card .info-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
   
 .card .info {
 	font-weight: 400;
-	color: white;
+	color: rgba(255, 255, 255, 0.741);
 	display: block;
 	text-align: center;
 	font-size: 20px;
@@ -553,16 +560,16 @@ circle {
 	width: 80%;
 }
 
-.card .img {
-	width: 6em;
-	height: 2em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: white;
-	border-radius: 15px;
-	margin: auto auto 10px auto;
-}
+// .card .img {
+// 	width: 6em;
+// 	height: 2em;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	background: white;
+// 	border-radius: 15px;
+// 	margin: auto auto 10px auto;
+// }
 
 .card .share {
 	margin-top: 1em;

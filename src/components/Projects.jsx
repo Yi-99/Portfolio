@@ -4,6 +4,21 @@ import aiTripAdvisorVideo from '../assets/ai-trip-advisor-mod.mp4';
 import glodAiPromoVideo from '../assets/glod-ai-promo.mp4';
 import './styles.scss';
 
+const projects = [
+	{
+		title: 'AI Video Generator - Glod AI',
+		time_loc: 'May 2024 ~ Present',
+		info: 'A monolithic web application created on top of Next.JS for the frontend and FastAPI for the backend that generates 1-2 minute AI-generated product advertisement videos using various gen AI APIs',
+		video: glodAiPromoVideo,
+	},
+	{
+		title: 'AI Trip Advisor',
+		time_loc: 'Apr 2024',
+		info: 'A monolithic web application created on top of React for the frontend and Node.JS for the backend that generates a week-long trip itinerary based on user preferences and constraints',
+		video: aiTripAdvisorVideo,
+	},
+]
+
 const Projects = () => {
 
   useEffect(() => {

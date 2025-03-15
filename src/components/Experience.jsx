@@ -1,5 +1,87 @@
 import React, { useEffect } from 'react';
 import { Icon } from '@iconify/react';
+import PollenLogo from '../assets/pollen_sense_llc_logo.jpeg';
+import RollinsLogo from '../assets/rollins_center_logo.jpeg';
+import IPOHubLogo from '../assets/ipo_hub_logo.png';
+import BYUtvLogo from '../assets/byutv_logo.png';
+
+const experiences = [
+	{
+		logo: IPOHubLogo,
+		title: 'Web Developer',
+		company: 'Marriott School of Business: School of Accountancy',
+		info: [
+			`Managed four websites that have over 11K users and 850K impressions every month and have over 100+ professional business articles`,
+			'Spearheaded the transfer of three professional business blogs to a different CMS, Webflow from Wordpress',
+		],
+		share: [
+			{ text: 'devicon-plain:linkedin', link: 'https://www.linkedin.com/company/ipohub-org/' },
+			{ text: 'ri:twitter-fill', link: 'https://twitter.com/ipohub_org?lang=en' }
+		],
+		buttons: [
+			{ text: 'IPOHub', link: 'https://www.ipohub.org' },
+			{ text: 'RevenueHub', link: 'https://www.revenuehub.org' },
+			{ text: 'ESGReportingHub', link: 'https://www.esg-reportinghub.org' },
+			{ text: 'FinancialReportingHub', link: 'https://www.financialreportinghub.org' },
+		]
+	},
+	{
+		logo: BYUtvLogo,
+		title: 'Backend Developer',
+		company: 'BYU Broadcasting',
+		info: [
+			`Led the implementation of a highly scalable microservice that supplies the BI with over 1TB of real-time user data every day that
+			handles up to hundred times the usual number of user data during seasonal spikes via Fargate ECS fronted by an ELB, ElastiCache
+			(Redis), and AWS Kinesis stream`,
+			`Achieved 99% success rate in a spike test of user increase by 1000% resulting in over 2,000,000 HTTP requests sent to a microservice
+			of Fargate ECS fronted by an ELB in the period of 9 minutes by leveraging Docker, Junit, and k6`,
+			`Reduced load times by 10x by converting REST-based auth system to Event driven architecture on AWS Eventbridge and SQS`,
+		],
+		share: [
+			{ text: 'devicon-plain:linkedin', link: 'https://www.linkedin.com/company/byu-broadcasting/mycompany/' }
+		],
+		buttons: [
+			{ text: 'BYUtv', link: 'https://www.byutv.org' }
+		]
+	},
+	{
+		logo: PollenLogo,
+		title: 'Fullstack Development Intern',
+		company: 'Pollen Sense, LLC',
+		info: [
+			`Engineered the GEM seasonality UI with integration of Google Maps API, enabling the internal aerobiology team to dynamically
+			predict seasonal start dates for over a hundred different pollen species.`,
+			`Devised an end-to-end delete frames feature that removed raw frame images from the cloud and managed frame metadata in Microsoft
+			SQL Server using Azure App Functions and .NET framework, showcasing proficiency in application development and Microsoft Azure.`,
+			`Implemented a layered bar and line graph to visualize aggregated ppm3 levels and air volume across multiple time intervals, reinforcing
+			expertise in data visualization and agile project execution.`,
+		],
+		share: [
+			{ text: 'devicon-plain:linkedin', link: 'https://www.linkedin.com/company/pollen-sense-llc/posts/?feedView=all' },
+		],
+		buttons: [
+			{ text: 'Pollen Sense', link: 'https://www.pollensense.com/' },
+			{ text: 'Pollen Sense Portal', link: 'https://portal.pollensense.com/' },
+		]
+	},
+	{
+		logo: RollinsLogo,
+		title: 'Fullstack Developer',
+		company: 'BYU Rollins Center for Entrepreneurship and Technology',
+		info: [
+			`Developed a customer-facing website using modern web technologies, delivering services to thousands of BYU students and alumni
+			and demonstrating hands-on experience in software and web application development.`,
+			`Oversaw a monolithic microservice backend on AWS EC2, applying agile practices and strong problem-solving skills to maintain a
+			critical internal web application.`
+		],
+		share: [
+			{ text: 'devicon-plain:linkedin', link: 'https://www.linkedin.com/company/rollins-center-for-entrepreneurship-&-technology/posts/?feedView=all' },
+		],
+		buttons: [
+			{ text: 'Rollins Center', link: 'https://rollins-web-portal.onrender.com/' },
+		]
+	}
+]
 
 const Experience = () => {
 
@@ -25,97 +107,47 @@ const Experience = () => {
   return (
     <div className='exp_container'>
       <h1 className='header'>Experience</h1>
-      <div className='exp_card_container'>
-        <div className="card hidden">
-          <div className="card_header">
-            <div className="img">
-              <img src="https://uploads-ssl.webflow.com/6417e237f49583444318b9a0/641a2540e0e6a20fb58eb31f_ipohublogo-black.png" alt="ipoHub logo" width="80" height="auto"/>
-            </div>
-            <h1 className='title'>Front-End Developer</h1>
-            <p className='company'>Marriott School of Business: School of Accountancy</p>
-          </div>
-          <p className="info">
-            Managed three websites that have over 11K users and 850K impressions every month and have over 100+ professional business articles
-          </p>
-          <p className="info">
-            Spearheaded the transfer of three professional business blogs to a different CMS, Webflow from Wordpress
-          </p>
-          <p className='info'>
-            Counseled and accommodated the needs and wants of clients on the design and layout of the new blog website and coordinated with the team frequently to post, adjust, and remove articles and posts.
-          </p>
-          <div className="share">
-            {/* <a href=""><Icon icon="carbon:logo-github" /></a> */}
-            <a href="https://www.linkedin.com/company/ipohub-org/"><Icon icon="devicon-plain:linkedin" /></a>
-            <a href="https://twitter.com/ipohub_org?lang=en"><Icon icon="ri:twitter-fill" color="white" /></a>
-          </div>
-          <div className='button_container'>
-            <a href="https://www.ipohub.org" className="button">IPOHub</a>
-            <a href="https://www.revenuehub.org" className="button">RevenueHub</a>
-            <a href="https://www.esg-reportinghub.org" className="button">ESGReportingHub</a>
-          </div>
-        </div>
-      </div>
-
-      <div className='exp_card_container'>
-        <div className="card hidden">
-          <div className="card_header">
-            <div>
-              <img src="https://www.byutv.org/images/byutv-logo.svg" alt="BYUtv logo" width="80" height="auto"/>
-            </div>
-            <h1 className='title'>Back-End Developer</h1>
-            <p className='company'>BYU Broadcasting</p>
-          </div>
-          <p className="info">
-            Led the implementation of a highly scalable microservice that supplies the BI with over 1TB of real-time user data
-            every day that handles up to hundred times the usual number of user data during seasonal spikes via Fargate ECS
-            fronted by an ALB, Redis, and AWS Kinesis stream
-          </p>
-          <p className="info">
-            Reduced load times by 10x by converting REST-based auth system to Event driven architecture on AWS
-            Eventbridge and SQS
-          </p>
-          <p className='info'>
-            Streamlined the ingestion process of an event driven architecture-based microservice using AWS CDK v3 to
-            hydrate AWS DynamoDB tables with over 1 million events a day by leveraging AWS SQS and Lambda
-          </p>
-          <div className="share">
-            {/* <a href=""><Icon icon="carbon:logo-github" /></a> */}
-            <a href="https://www.linkedin.com/company/byu-broadcasting/mycompany/"><Icon icon="devicon-plain:linkedin" /></a>
-          </div>
-          <div className='button_container'>
-            <a href="https://www.byutv.org" className="button">BYUtv</a>
-          </div>
-        </div>
-      </div>
-
-      <div className='exp_card_container'>
-        <div className="card hidden">
-          <div className="card_header">
-            <div>
-              <img src="https://media.licdn.com/dms/image/v2/D560BAQHNmAX6WGLvuQ/company-logo_200_200/company-logo_200_200/0/1719258180878/pollen_sense_llc_logo?e=1735776000&v=beta&t=81unfFThPWjWjJ1jvcThpCRNagaKpPih7VSxEtTPM5Q" alt="PollenSense logo" width="80" height="auto"/>
-            </div>
-            <h1 className='title'>Full-Stack Development Intern</h1>
-            <p className='company'>Pollen Sense LLC</p>
-          </div>
-          <p className="info">
-						Refactored customer-facing website built on Angular 17 to be mobile friendly utilizing SCSS and Bootstrap
-          </p>
-          <p className="info">
-						Built a customer-facing web page based which empowers the user to have more direct control of the APS400 Particulate Sensor that extracts pollen, dust, and mold from the air and analyzes the composition of different particles
-          </p>
-          <p className='info'>
-						Implemented a delete frames feature and backend API endpoint that handles the deletion of frame metadata in Microsoft SQL server and raw frame images in Azure Blob Storage by leveraging Azure App Functions and .NET Framework
-          </p>
-          <div className="share">
-            <a href="https://github.com/PollenSense"><Icon icon="carbon:logo-github" /></a>
-            <a href="https://www.linkedin.com/company/pollen-sense-llc/posts/?feedView=all"><Icon icon="devicon-plain:linkedin" /></a>
-          </div>
-          <div className='button_container'>
-            <a href="https://www.pollensense.com/" className="button">Pollen Sense</a>
-          </div>
-        </div>
-      </div>
-    </div>
+			{ experiences && experiences.map((experience, i) => {
+				return (
+					<div className='exp_card_container' key={i}>
+						<div className="card hidden">
+							<div className="card_header">
+								<div className="img">
+									<img src={experience.logo} alt="ipoHub logo" width="80" height="auto"/>
+								</div>
+								<h1 className='title'>{experience.title}</h1>
+								<p className='company'>{experience.company}</p>
+							</div>
+							<div className="info-container">
+								{ experience.info && experience.info.map((i, index) => {
+									return ( 
+										<p className="info" key={index}>
+											{i}
+										</p> 
+									)
+								})}
+							</div>
+							<div className="share">
+								{ experience.share && experience.share.map((share, index) => {
+									return (
+										<a href={share.link} key={index}>
+											{ share.icon ? <img src={share.icon} alt={experience.company} width="30" height="auto"/> : <Icon icon={share.text} /> }
+										</a>
+									)
+								})}
+							</div>
+							<div className='button_container'>
+								{ experience.buttons && experience.buttons.map((button, index) => {
+									return (
+										<a href={button.link} className="button" key={index}>{button.text}</a>
+									)
+								})}
+							</div>
+						</div>
+					</div>
+				)})
+			}
+		</div>
   )
 }
 

@@ -2,10 +2,13 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yi-99.github.io/Resume/",
+  "homepage": "https://www.yiranglim.com",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@iconify-icons/carbon": "^1.2.20",
+    "@iconify-icons/devicon-plain": "^1.2.16",
+    "@iconify-icons/ri": "^1.2.10",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.1",
     "@react-spring/parallax": "^9.7.2",
@@ -49,6 +52,6 @@
     ]
   },
   "devDependencies": {
-    "@iconify/react": "^4.1.0"
+    "@iconify/react": "^4.1.1"
   }
 }
