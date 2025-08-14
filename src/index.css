@@ -1,16 +1,5 @@
+@import "tailwindcss";
+
 body {
-  margin: 0;
-  font-family: 'Work Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #191919;
-}
-
-code {
-  font-family: 'Work Sans', sans-serif,
-    monospace;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-style: italic;
 }
