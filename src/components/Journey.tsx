@@ -12,11 +12,20 @@ const Journey: React.FC = () => {
       technologies: ['React', 'Javascript', 'Tailwindcss', 'FastAPI', '.NET CORE', 'C#', 'Microsoft SQL Server',]
     },
     {
+      year: 'Feb 2025',
+      type: 'project',
+      tags: ['Project'],
+      title: 'Hugging Hands',
+      location: '2nd Place • 2025 USU Hackathon • Logan, UT',
+      description: 'Repository for non-lab-made, natural, and dynamic videos containing American Sign Language that utilizes vison model that can detect sign langauge in a video with more than 85% accuracy.',
+      technologies: ['React', 'Typescript', 'Supabase', 'PostgreSQL', 'AWS', 'Google Photos API']
+    },
+    {
       year: 'Jan 2025',
       type: 'project',
       tags: ['Project'],
       title: 'TED the Therapeutic Bear',
-      location: 'Draper, UT',
+      location: '1st Place • 2025 AI Hackthon @ Utah Tech Week • Draper, UT',
       description: 'Developed a backend service that will fetch a voiceover of a celebrity and save it to a storage bucket that will be used to play it on the teddy bear.',
       technologies: ['React', 'Typescript', 'Supabase', 'PostgreSQL']
     },
@@ -34,7 +43,7 @@ const Journey: React.FC = () => {
       type: 'project',
       tags: ['Project'],
       title: 'Redo 2.0',
-      location: 'Lehi, UT',
+      location: '1st Place • JustBuild Hackathon • Lehi, UT',
       description: 'Complete redesign and development of a modern e-commerce platform with focus on performance and user experience.',
       technologies: ['React', 'Javascript', 'Tailwindcss', 'Render', 'Supabase', 'PostgreSQL']
     },
@@ -43,7 +52,7 @@ const Journey: React.FC = () => {
       type: 'project',
       tags: ['Project'],
       title: 'Skill Gap Analyzer',
-      location: 'Provo, UT',
+      location: '1st Place • 2024 BYU PMA Hackathon • Provo, UT',
       description: 'Developed a tool that analyzes the skill gap between a position or a job description and a candidate\'s resume and generates a comprehensive career path and descriptive milestones to bridge the gap.',
       technologies: ['React', 'Javascript', 'Tailwindcss', 'Render', 'Supabase', 'PostgreSQL']
     },
@@ -64,7 +73,7 @@ const Journey: React.FC = () => {
       type: 'project',
       tags: ['Project'],
       title: 'Glod AI',
-      location: 'Provo, UT',
+      location: '2024 Google\'s Gemini API Developer Competition • Provo, UT',
       description: 'Developed a tool that analyzes the skill gap between a position or a job description and a candidate\'s resume and generates a comprehensive career path and descriptive milestones to bridge the gap.',
       technologies: ['Python', 'FastAPI', 'OpenAI', 'AWS', 'Supabase', 'PostgreSQL', 'Docker', 'Next.js', 'Tailwindcss'],
     },
@@ -107,7 +116,7 @@ const Journey: React.FC = () => {
         
         <div className="relative">
           {/* Vertical timeline line */}
-          <div className="absolute left-[0.35rem] top-0 bottom-0 w-0.5 bg-gray-300"></div>
+          <div className="absolute left-[0.33rem] top-0 bottom-0 w-0.5 bg-gray-300"></div>
           
           <div className="space-y-12">
             {timelineItems.map((item, index) => (
