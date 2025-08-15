@@ -162,7 +162,7 @@ const Journey: React.FC = () => {
                     ))}
                   </div>
 
-                  <div className="flex flex-row gap-4">
+                  <div className="flex flex-row gap-4 flex-wrap">
                     {item.links?.map((link, linkIndex) => (
                       <div className="flex flex-col gap-2">
                         <a href={link.link} className="text-gray-700" target="_blank" rel="noopener noreferrer" key={linkIndex}>

@@ -18,9 +18,9 @@ const Header: React.FC = () => {
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4">
-        <nav className="flex items-center justify-between">
+        <nav className="flex items-center justify-between gap-2">
           <a href="/">
-            <img src="/y-logo.png" alt="Yirang Lim" className="w-10 h-10 hover:cursor-pointer" />
+            <img src="/y-logo.png" alt="Yirang Lim" className="w-5 h-5 sm:w-10 sm:h-10 hover:cursor-pointer" />
           </a>
           <div className="flex items-center space-x-8">
             <a href="#about" className="text-gray-700 hover:text-gray-900 transition-colors">
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
               Experience
             </a>
             <a href="#work" className="text-gray-700 hover:text-gray-900 transition-colors">
-              Work
+              Projects
             </a>
             <a href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors">
               Contact
