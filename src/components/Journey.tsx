@@ -2,14 +2,27 @@ import React from 'react';
 
 const Journey: React.FC = () => {
   const timelineItems = [
+		{
+			year: 'Sept 2025 - Present',
+			type: 'experience',
+			tags: ['Experience', 'Current'],
+			title: 'Staff Software Engineer',
+			location: 'HEAL Group',
+			description: 'Envisioning and developing of scalable health tech software solutions which incorporate artificial intelligence and machine learning to provide personalized and efficient healthcare solutions.',
+			technologies: ['React', 'Next.js', 'Typescript', 'Tailwindcss', 'FastAPI', 'Python'],
+		},
     {
-      year: 'May 2025 - Present',
+      year: 'May - Sept 2025',
       type: 'experience',
-      tags: ['Experience', 'Current'],
-      title: 'Jr. Full Stack Engineer',
+      tags: ['Experience'],
+      title: 'Full Stack Engineer',
       location: 'TDP Bakery • Chandler, AZ',
       description: 'Full-stack development for core platform features and re-envisioning software solutions built on old technologies into an effective and efficient scalable modern solutions.',
-      technologies: ['React', 'Javascript', 'Tailwindcss', 'FastAPI', '.NET CORE', 'C#', 'Microsoft SQL Server',]
+      technologies: ['React', 'Javascript', 'Tailwindcss', 'FastAPI', '.NET CORE', 'C#', 'Microsoft SQL Server',],
+			links: [
+				{link: 'https://www.tdpbakery.com/', text: 'TDP Bakery', image: '/tdp-bakery-logo.svg'},
+				{link: 'https://www.bigbakeface.com/#contact-us', text: 'Bakeface', image: '/bake-face-logo.svg'}
+			]
     },
     {
       year: 'Jan 2025',
@@ -18,7 +31,7 @@ const Journey: React.FC = () => {
       title: 'TED the Therapeutic Bear',
       location: 'Draper, UT',
       description: 'Developed a backend service that will fetch a voiceover of a celebrity and save it to a storage bucket that will be used to play it on the teddy bear.',
-      technologies: ['React', 'Typescript', 'Supabase', 'PostgreSQL']
+      technologies: ['React', 'Typescript', 'Supabase', 'PostgreSQL'],
     },
     {
       year: 'Dec 2024 - May 2025',
