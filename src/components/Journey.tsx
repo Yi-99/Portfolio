@@ -15,9 +15,9 @@ const Journey: React.FC = () => {
       year: 'May - Sept 2025',
       type: 'experience',
       tags: ['Experience'],
-      title: 'Full Stack Engineer',
+      title: 'Fullstack Developer',
       location: 'TDP Bakery • Chandler, AZ',
-      description: 'Full-stack development for core platform features and re-envisioning software solutions built on old technologies into an effective and efficient scalable modern solutions.',
+      description: 'Full-stack development for core platform features and re-envisioning internal software solutions built on old technologies into an effective and efficient scalable modern solutions.',
       technologies: ['React', 'Javascript', 'Tailwindcss', 'FastAPI', '.NET CORE', 'C#', 'Microsoft SQL Server',],
 			links: [
 				{link: 'https://www.tdpbakery.com/', text: 'TDP Bakery', image: '/tdp-bakery-logo.svg'},
