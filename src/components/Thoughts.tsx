@@ -8,7 +8,7 @@ interface BlogPost {
   date: string;
   readTime: string;
   image: string;
-  featured?: boolean;
+  isFeatured?: boolean;
 }
 
 const Thoughts: React.FC = () => {
@@ -20,7 +20,7 @@ const Thoughts: React.FC = () => {
     date: 'Dec 2024',
     readTime: '5 min read',
     image: '/api/placeholder/600/400',
-    featured: true
+    isFeatured: true
   };
 
   const recentPosts: BlogPost[] = [
@@ -59,10 +59,10 @@ const Thoughts: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
-            Thoughts on Design, Technology, and Building Better Digital Experiences
+            Thoughts on Design, Technology, Building Better Digital Experiences, and the Complexity of the World
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            A collection of insights, learnings, and perspectives from the intersection of design and technology.
+            A collection of insights, learnings, and perspectives from the intersection of technology and contemplations.
           </p>
         </div>
 
