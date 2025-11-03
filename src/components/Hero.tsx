@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
           Providing scalable software solutions to real-world problems since 2023.
         </p>
         <p className="text-lg md:text-xl text-gray-500 mb-12 font-light italic">
-          Currently building at TDP Bakery.
+          Currently building at HEAL USA.
         </p>
         <button 
           className="px-8 py-3 border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-colors duration-300 rounded-sm hover:cursor-pointer"
